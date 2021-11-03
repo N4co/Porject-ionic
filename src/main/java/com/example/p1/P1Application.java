@@ -71,7 +71,14 @@ public abstract class P1Application implements CommandLineRunner {
 		
     Categoria cat1 = new Categoria(null, "Informatica");
     Categoria cat2 = new Categoria(null, "Escritório");
-		
+    Categoria cat3 = new Categoria(null, "Cama, mesa banho");
+    Categoria cat4 = new Categoria(null, "Livraria");
+    Categoria cat5 = new Categoria(null, "Jardinagem");
+    Categoria cat6 = new Categoria(null, "Automoveis");
+    Categoria cat7 = new Categoria(null, "Bicicletaria");
+    
+    
+    
 	Produto p1 = new Produto(null, "Computador", 2000.00);
 	Produto p2 = new Produto(null, "Impressora", 800.00);
 	Produto p3 = new Produto(null, "Mouse",  80.00);
@@ -84,7 +91,7 @@ public abstract class P1Application implements CommandLineRunner {
 	p3.getCategoria().addAll(Arrays.asList(cat1));
 	
 	
-	 categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
+	 categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7));
 	 produtoRepository.saveAll(Arrays.asList(p1, p2, p3));
 	
 	Estado est1 = new Estado(null, "Minas Gerais");
